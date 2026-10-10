@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo de Software Móvil y Sistemas</title>
+    <!-- Tailwind CSS desde CDN para diseño moderno y rápido -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased">
+
+    <!-- Navegación -->
+    <header class="border-b border-slate-800 bg-slate-900/90 sticky top-0 z-50 backdrop-blur">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
+                <i class="fa-solid fa-code text-indigo-500"></i> TuEmpresa<span class="text-indigo-400">Tech</span>
+            </a>
+            <nav class="hidden md:flex gap-8 text-sm text-slate-300 font-medium">
+                <a href="#servicios" class="hover:text-indigo-400 transition">Servicios</a>
+                <a href="#tecnologias" class="hover:text-indigo-400 transition">Tecnologías</a>
+                <a href="#contacto" class="hover:text-indigo-400 transition">Contacto</a>
+            </nav>
+            <a href="#contacto" class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg text-sm font-semibold transition">
+                Cotizar Proyecto
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-6xl mx-auto px-6 py-20 md:py-28 text-center">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-400 text-xs font-semibold mb-6">
+            <span class="w-2 h-2 rounded-full bg-indigo-400 animate-pulse"></span> Innovación y Rendimiento
+        </div>
+        <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-tight max-w-4xl mx-auto">
+            Transformamos tus ideas en <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">software móvil y sistemas a medida</span>
+        </h1>
+        <p class="mt-6 text-lg text-slate-400 max-w-2xl mx-auto">
+            Diseñamos y construimos aplicaciones móviles nativas/híbridas, arquitecturas backend escalables y sistemas empresariales de alta disponibilidad.
+        </p>
+        <div class="mt-8 flex justify-center gap-4">
+            <a href="#contacto" class="bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-3 rounded-lg font-semibold shadow-lg shadow-indigo-600/20 transition">
+                Hablemos de tu idea
+            </a>
+            <a href="#servicios" class="border border-slate-700 hover:bg-slate-800 text-slate-300 px-6 py-3 rounded-lg font-semibold transition">
+                Ver Soluciones
+            </a>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-800">
+        <h2 class="text-3xl font-bold text-center mb-12">Nuestros Servicios</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Servicio 1 -->
+            <div class="p-6 rounded-xl bg-slate-800/50 border border-slate-700/60 hover:border-indigo-500 transition">
+                <div class="w-12 h-12 rounded-lg bg-indigo-600/20 text-indigo-400 flex items-center justify-center text-xl mb-4">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Desarrollo Móvil</h3>
+                <p class="text-slate-400 text-sm">
+                    Apps fluidas para iOS y Android utilizando Flutter, React Native, Swift o Kotlin con enfoque en UX/UI y rendimiento.
+                </p>
+            </div>
+            <!-- Servicio 2 -->
+            <div class="p-6 rounded-xl bg-slate-800/50 border border-slate-700/60 hover:border-indigo-500 transition">
+                <div class="w-12 h-12 rounded-lg bg-cyan-600/20 text-cyan-400 flex items-center justify-center text-xl mb-4">
+                    <i class="fa-solid fa-server"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Sistemas Informáticos</h3>
+                <p class="text-slate-400 text-sm">
+                    Software a medida, plataformas web, paneles administrativos (ERPs, CRMs) e integración de APIs complejas.
+                </p>
+            </div>
+            <!-- Servicio 3 -->
+            <div class="p-6 rounded-xl bg-slate-800/50 border border-slate-700/60 hover:border-indigo-500 transition">
+                <div class="w-12 h-12 rounded-lg bg-emerald-600/20 text-emerald-400 flex items-center justify-center text-xl mb-4">
+                    <i class="fa-solid fa-cloud"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Cloud & DevOps</h3>
+                <p class="text-slate-400 text-sm">
+                    Arquitecturas robustas en AWS, Google Cloud y Azure con microservicios y despliegue continuo (CI/CD).
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tecnologías -->
+    <section id="tecnologias" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-800 text-center">
+        <h2 class="text-2xl font-bold mb-8 text-slate-300">Stack Tecnológico</h2>
+        <div class="flex flex-wrap justify-center gap-4 text-sm font-medium text-slate-400">
+            <span class="px-4 py-2 bg-slate-800 rounded-lg border border-slate-700">Flutter</span>
+            <span class="px-4 py-2 bg-slate-800 rounded-lg border border-slate-700">React Native</span>
+            <span class="px-4 py-2 bg-slate-800 rounded-lg border border-slate-700">Node.js</span>
+            <span class="px-4 py-2 bg-slate-800 rounded-lg border border-slate-700">Python</span>
+            <span class="px-4 py-2 bg-slate-800 rounded-lg border border-slate-700">PostgreSQL</span>
+            <span class="px-4 py-2 bg-slate-800 rounded-lg border border-slate-700">Docker</span>
+            <span class="px-4 py-2 bg-slate-800 rounded-lg border border-slate-700">AWS</span>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="max-w-4xl mx-auto px-6 py-16 border-t border-slate-800 text-center">
+        <h2 class="text-3xl font-bold mb-4">¿Listo para empezar tu proyecto?</h2>
+        <p class="text-slate-400 mb-8">Cuéntanos sobre tus requerimientos y te asesoramos técnicamente sin compromiso.</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <!-- Cambia estos enlaces por tu correo y WhatsApp real -->
+            <a href="mailto:contacto@tuempresa.com" class="inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-3 rounded-lg font-semibold transition">
+                <i class="fa-solid fa-envelope"></i> contacto@tuempresa.com
+            </a>
+            <a href="https://wa.me/TUNUMERO" target="_blank" class="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-3 rounded-lg font-semibold transition">
+                <i class="fa-brands fa-whatsapp"></i> Chat por WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 py-6 text-center text-xs text-slate-500">
+        <p>© 2026 TuEmpresaTech. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
